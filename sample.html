@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Shift_JIS">
+<META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<SCRIPT TYPE="text/javascript" SRC="siori.js"></SCRIPT>
+<TITLE>海豚工房★ふたごきせかえ（仮）</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#666666" LINK="#3366FF" VLINK="#6699FF" ALINK="#FF6666" onLoad="sioriInit(); title('off'); setChange(0)">
+
+あと1着くらい衣装を増やしていく予定です。ご希望の衣装ありましたら拍手等からどぞ（笑）。<br>
+1/28　どっちをキュアブラックにしてどっちをキュアホワイトにするかはお好みで（笑）。　
+
+<!-- タイトル表示（変更／削除可能です）-->
+<DIV ID="title" STYLE="position:absolute; visibility:hidden; z-index:1; color:#997788; background-color:#FFDDEE; font-size:16px; font-weight:bold; text-align:center; border:4px double #997788; padding:16px">
+<P>■ ATELIER DOLPHIN★双子着せ替え■</P>
+<P>衣装準備中！ちょっとまってね…</P>
+</DIV>
+<!-- タイトル終わり -->
+
+<SCRIPT TYPE="text/javascript">
+<!--
+title('on');
+/*****  動作設定  *****/
+var snapPixel = 16;    // セルをスナップするピクセル数
+var delaytime = 1000;  // タイトルの表示時間(1000=1秒)
+
+/***** ↓しおりのどうぐばこのフォームデータをここに貼り付けてください *****/
+function setChange(no)
+{
+  switch (no) {
+  case  0:
+    startpos("cel"); // ■セットNo.0(セル)
+    setpos("321,54;579,298;889,284;571,283;763,256;353,280;416,387,*;551,408;545,181;854,402");
+    setpos("127,382;848,157;100,171;9,341;-14,155;329,360;356,274;318,158;743,332;706,144");
+    setpos("39,56;41,423;186,74;499,512;451,151");
+    break;
+  default:
+    break;
+  }
+}
+
+cel("src:gemini/sagakanon.gif");
+cel("src:gemini/pants.gif");
+cel("src:gemini/spats.gif");
+cel("src:gemini/kanonunder.gif");
+cel("src:gemini/kanonunder2.gif");
+cel("src:gemini/sagaunder.gif");
+cel("src:gemini/sundal2.gif");
+cel("src:gemini/sundal.gif");
+cel("src:gemini/sunion.gif");
+cel("src:gemini/puri-b2.gif");
+cel("src:gemini/puri-w2.gif");
+cel("src:gemini/puri-b1.gif");
+cel("src:gemini/puri-w1.gif");
+cel("src:gemini/surplice2.gif");
+cel("src:gemini/surplice1.gif");
+cel("src:gemini/closs3.gif");
+cel("src:gemini/closs2.gif");
+cel("src:gemini/closs1.gif");
+cel("src:gemini/scaile2.gif");
+cel("src:gemini/scaile1.gif");
+cel("src:gemini/towel.gif");
+cel("src:gemini/furo.gif");
+cel("src:gemini/puri-w0.gif");
+cel("src:gemini/ahiru.gif");
+cel("src:gemini/kani.gif");
+
+/***** ↑貼り付けデータはここまでです *************************************/
+/*
+ *  タイトルの表示処理（編集は不要です）
+ */
+function title(mode)
+{
+		var		w, h, obj;
+
+	if (document.all) {
+		obj = document.all.title;
+		w = document.body.clientWidth;
+		h = document.body.clientHeight;
+	}
+	else if (document.getElementById) {
+		obj = document.getElementById("title");
+		w = window.innerWidth;
+		h = window.innerHeight;
+	}
+	if (!obj) {
+		return;
+	}
+
+	if ("on" == mode) {
+		obj.style.left = (w - obj.offsetWidth) / 2;
+		obj.style.top  = (h - obj.offsetHeight) / 2;
+		obj.style.visibility = "visible";
+	}
+	else if ("off" == mode) {
+		setTimeout("title('ontimer')", delaytime);
+	}
+	else if ("ontimer" == mode) {
+		obj.style.visibility = "hidden";
+	}
+}
+
+if (!(document.all || document.getElementById)) {
+	document.write('<P STYLE="position:absolute; bottom:0">きせかえで遊ぶためには Internet Explorer 5 / Netscape 6 以降などの DHTML 対応ブラウザが必要です。<\/P>\n');
+}
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<P STYLE="position:absolute; bottom:0">きせかえで遊ぶためには JavaScript を有効にした Internet Explorer 5 / Netscape 6 以降などの DHTML 対応ブラウザが必要です。</P>
+</NOSCRIPT>
+
+<FORM NAME="form1">
+<DIV STYLE="position:absolute; right:4px; top:4px; z-index:1; background-color:#FFFFFF; padding:2px; border:3px double #666666">
+<INPUT TYPE="radio" NAME="set" VALUE="0" onClick="setChange(0)" CHECKED>0
+<INPUT TYPE="radio" NAME="set" VALUE="1" onClick="setChange(1)">1
+<INPUT TYPE="radio" NAME="set" VALUE="2" onClick="setChange(2)">2
+<INPUT TYPE="radio" NAME="set" VALUE="3" onClick="setChange(3)">3
+<INPUT TYPE="radio" NAME="set" VALUE="4" onClick="setChange(4)">4
+&nbsp;
+<INPUT TYPE="button" VALUE="戻る" onClick="history.back()">
+</DIV>
+</FORM>
+
+</BODY>
+</HTML>
