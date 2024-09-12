@@ -1,6 +1,6 @@
 <html>
 <head>
- <TITLE>=�{�P�h�~�ɋC���]���B�����̐_�o����=</TITLE>
+ <TITLE>=ボケ防止に気分転換。黄金の神経衰弱=</TITLE>
 <style type="text/css">
 <!--
 body,td,tr{
@@ -14,9 +14,9 @@ body,td,tr{
  <BODY background="wall.gif">
  <CENTER><IMG src="title.gif" width="300" height="50" hspace="10" vspace="10"></CENTER>
 
- <FONT size="2"><CENTER>���{�P�h�~�p�A�y�ыC���]���p�Ɏ��삵�Ă݂܂����i�΁j�B<BR>
-������u�_�o����Q�[���ł������܂��B���������m�𑵂��ăl��<BR>
-[START]�{�^���������Ȃ��Ă��Ȃ����Q�[���J�n���܂��c�i���j�B<BR><BR><BR>
+ <FONT size="2"><CENTER>■ボケ防止用、及び気分転換用に試作してみました（笑）。<BR>
+いわゆる「神経衰弱ゲームでございます。同じ聖闘士を揃えてネ★<BR>
+[START]ボタンを押さなくてもなぜかゲーム開始します…（汗）。<BR><BR><BR>
 
 
  
@@ -33,40 +33,40 @@ body,td,tr{
 	hatena=new Image();
 
 
-	//�Q�[���J�n���̂͂Ăȃ}�[�N�̉摜���w��
+	//ゲーム開始時のはてなマークの画像を指定
 	hatena.src="atena.gif";
 
-	//�摜�̉������w��
+	//画像の横幅を指定
 	pic_w=50;
 
-	//�摜�̍������w��
+	//画像の高さを指定
 	pic_h=50;
 
-	//�߂������J�[�h���߂�܂ł̎��ԁB�傫������Βx���A����������Α����Ȃ�B
-	//100�ȏ�̒l���]�܂���
+	//めくったカードが戻るまでの時間。大きくすれば遅く、小さくすれば早くなる。
+	//100以上の値が望ましい
 	hayasa=300;
 
-	//�Q�[���N���A���A�A���[�g�Ȃ��0���w��B�ʃy�[�W��\������Ȃ�1���w��B
+	//ゲームクリア時、アラートならば0を指定。別ページを表示するなら1を指定。
 	clear_dore=0;
 
-	//�Q�[���N���A���A�A���[�g�ɕ\�����镶�����w��
-	clear_moji='�����l�ł����`�I�܂��V��ł˂�';
+	//ゲームクリア時、アラートに表示する文字を指定
+	clear_moji='お疲れ様でした～！また遊んでねｖ';
 
-	//�Q�[���N���A���A�\������ʃy�[�W��URL���w��
+	//ゲームクリア時、表示する別ページのURLを指定
 	clear_url='clear.html';
 
 
-	//���}�X�Əc�}�X�������Z���āA�K��2�Ŋ���؂�鐔�l���w�肵�ĉ������B
-	//��F����masu_w=8;�A�c��masu_h=5;��A����masu_w=6;�A�c��masu_h=10;�Ȃ�
+	//横マスと縦マスをかけ算して、必ず2で割り切れる数値を指定して下さい。
+	//例：横をmasu_w=8;、縦をmasu_h=5;や、横をmasu_w=6;、縦をmasu_h=10;など
 
-	//�c�}�X�̐����w��
+	//縦マスの数を指定
 	masu_h=5;
 
-	//���}�X�̐����w��
+	//横マスの数を指定
 	masu_w=6;
 
-	//�_�o����Ɏg�p����摜�̐�
-	//�T���v���ł�0-9�܂ł�10�̉摜���g�p���Ă�̂�10�B
+	//神経衰弱に使用する画像の数
+	//サンプルでは0-9までの10個の画像を使用してるので10。
 	pic_num=15;
 
 
@@ -87,7 +87,7 @@ body,td,tr{
 		ikutu=0;	atari=0;	i=0;	j=0;	doko=0;
 		num=Math.floor((masu_w * masu_h) / (pic_num * 2));
 		max=pic_num;	min=0;	ataris=new Array();
-		if((masu_w * masu_h) % 2 != 0)alert('���l�G���[�ł��B\n���ڂ̍��v�����s���ł��B');
+		if((masu_w * masu_h) % 2 != 0)alert('数値エラーです。\n升目の合計数が不正です。');
 		else {
 			while(i < num)
 				{
@@ -187,7 +187,7 @@ body,td,tr{
 
 <div align="center">
 
-<!-- �ȉ��ύX�s�� -->
+<!-- 以下変更不可 -->
 
 <img src="" name="hidden" width="1" height="1" border="0">
 
@@ -218,12 +218,9 @@ body,td,tr{
 	<input type="button" value="RESET" onClick="my_reset();">
  </form>
 
-<!-- �ȏ�ύX�s�� -->
+<!-- 以上変更不可 -->
 
-</div>
-<BR><BR>
-<A href="http://kanazawa.cool.ne.jp/saintgemini/index.htm">[�A����Ɓc]</A>
-<CENTER><FONT color="darkgray">
+
 -------------------------------------------------<BR>
 Copyright (C)2000-2004 ATELIER DOLPHIN<BR>
 -------------------------------------------------<BR>
