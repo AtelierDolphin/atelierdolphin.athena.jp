@@ -4,33 +4,29 @@
 <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
 <META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
 <SCRIPT TYPE="text/javascript" SRC="siori.js"></SCRIPT>
-<TITLE>ŠC“ØH–[š‚Ó‚½‚²‚«‚¹‚©‚¦i‰¼j</TITLE>
+<TITLE>æµ·è±šå·¥æˆ¿â˜…ãµãŸã”ãã›ã‹ãˆï¼ˆä»®ï¼‰</TITLE>
 </HEAD>
 <BODY BGCOLOR="#FFFFFF" TEXT="#666666" LINK="#3366FF" VLINK="#6699FF" ALINK="#FF6666" onLoad="sioriInit(); title('off'); setChange(0)">
 
-‚ ‚Æ1’…‚­‚ç‚¢ˆß‘•‚ð‘‚â‚µ‚Ä‚¢‚­—\’è‚Å‚·B‚²Šó–]‚Ìˆß‘•‚ ‚è‚Ü‚µ‚½‚ç”Žè“™‚©‚ç‚Ç‚¼iÎjB<br>
-1/28@‚Ç‚Á‚¿‚ðƒLƒ…ƒAƒuƒ‰ƒbƒN‚É‚µ‚Ä‚Ç‚Á‚¿‚ðƒLƒ…ƒAƒzƒƒCƒg‚É‚·‚é‚©‚Í‚¨D‚Ý‚ÅiÎjB@
-
-<!-- ƒ^ƒCƒgƒ‹•\Ž¦i•ÏX^íœ‰Â”\‚Å‚·j-->
 <DIV ID="title" STYLE="position:absolute; visibility:hidden; z-index:1; color:#997788; background-color:#FFDDEE; font-size:16px; font-weight:bold; text-align:center; border:4px double #997788; padding:16px">
-<P>¡ ATELIER DOLPHINš‘oŽq’…‚¹‘Ö‚¦¡</P>
-<P>ˆß‘•€”õ’†I‚¿‚å‚Á‚Æ‚Ü‚Á‚Ä‚Ëc</P>
+<P>â–  ATELIER DOLPHINâ˜…åŒå­ç€ã›æ›¿ãˆâ– </P>
+<P>è¡£è£…æº–å‚™ä¸­ï¼ã¡ã‚‡ã£ã¨ã¾ã£ã¦ã­â€¦</P>
 </DIV>
-<!-- ƒ^ƒCƒgƒ‹I‚í‚è -->
+<!-- ã‚¿ã‚¤ãƒˆãƒ«çµ‚ã‚ã‚Š -->
 
 <SCRIPT TYPE="text/javascript">
 <!--
 title('on');
-/*****  “®ìÝ’è  *****/
-var snapPixel = 16;    // ƒZƒ‹‚ðƒXƒiƒbƒv‚·‚éƒsƒNƒZƒ‹”
-var delaytime = 1000;  // ƒ^ƒCƒgƒ‹‚Ì•\Ž¦ŽžŠÔ(1000=1•b)
+/*****  å‹•ä½œè¨­å®š  *****/
+var snapPixel = 16;    // ã‚»ãƒ«ã‚’ã‚¹ãƒŠãƒƒãƒ—ã™ã‚‹ãƒ”ã‚¯ã‚»ãƒ«æ•°
+var delaytime = 1000;  // ã‚¿ã‚¤ãƒˆãƒ«ã®è¡¨ç¤ºæ™‚é–“(1000=1ç§’)
 
-/***** «‚µ‚¨‚è‚Ì‚Ç‚¤‚®‚Î‚±‚ÌƒtƒH[ƒ€ƒf[ƒ^‚ð‚±‚±‚É“\‚è•t‚¯‚Ä‚­‚¾‚³‚¢ *****/
+/***** â†“ã—ãŠã‚Šã®ã©ã†ãã°ã“ã®ãƒ•ã‚©ãƒ¼ãƒ ãƒ‡ãƒ¼ã‚¿ã‚’ã“ã“ã«è²¼ã‚Šä»˜ã‘ã¦ãã ã•ã„ *****/
 function setChange(no)
 {
   switch (no) {
   case  0:
-    startpos("cel"); // ¡ƒZƒbƒgNo.0(ƒZƒ‹)
+    startpos("cel"); // â– ã‚»ãƒƒãƒˆNo.0(ã‚»ãƒ«)
     setpos("321,54;579,298;889,284;571,283;763,256;353,280;416,387,*;551,408;545,181;854,402");
     setpos("127,382;848,157;100,171;9,341;-14,155;329,360;356,274;318,158;743,332;706,144");
     setpos("39,56;41,423;186,74;499,512;451,151");
@@ -66,9 +62,9 @@ cel("src:gemini/puri-w0.gif");
 cel("src:gemini/ahiru.gif");
 cel("src:gemini/kani.gif");
 
-/***** ª“\‚è•t‚¯ƒf[ƒ^‚Í‚±‚±‚Ü‚Å‚Å‚· *************************************/
+/***** â†‘è²¼ã‚Šä»˜ã‘ãƒ‡ãƒ¼ã‚¿ã¯ã“ã“ã¾ã§ã§ã™ *************************************/
 /*
- *  ƒ^ƒCƒgƒ‹‚Ì•\Ž¦ˆ—i•ÒW‚Í•s—v‚Å‚·j
+ *  ã‚¿ã‚¤ãƒˆãƒ«ã®è¡¨ç¤ºå‡¦ç†ï¼ˆç·¨é›†ã¯ä¸è¦ã§ã™ï¼‰
  */
 function title(mode)
 {
@@ -102,12 +98,12 @@ function title(mode)
 }
 
 if (!(document.all || document.getElementById)) {
-	document.write('<P STYLE="position:absolute; bottom:0">‚«‚¹‚©‚¦‚Å—V‚Ô‚½‚ß‚É‚Í Internet Explorer 5 / Netscape 6 ˆÈ~‚È‚Ç‚Ì DHTML ‘Î‰žƒuƒ‰ƒEƒU‚ª•K—v‚Å‚·B<\/P>\n');
+	document.write('<P STYLE="position:absolute; bottom:0">ãã›ã‹ãˆã§éŠã¶ãŸã‚ã«ã¯ Internet Explorer 5 / Netscape 6 ä»¥é™ãªã©ã® DHTML å¯¾å¿œãƒ–ãƒ©ã‚¦ã‚¶ãŒå¿…è¦ã§ã™ã€‚<\/P>\n');
 }
 //-->
 </SCRIPT>
 <NOSCRIPT>
-<P STYLE="position:absolute; bottom:0">‚«‚¹‚©‚¦‚Å—V‚Ô‚½‚ß‚É‚Í JavaScript ‚ð—LŒø‚É‚µ‚½ Internet Explorer 5 / Netscape 6 ˆÈ~‚È‚Ç‚Ì DHTML ‘Î‰žƒuƒ‰ƒEƒU‚ª•K—v‚Å‚·B</P>
+<P STYLE="position:absolute; bottom:0">ãã›ã‹ãˆã§éŠã¶ãŸã‚ã«ã¯ JavaScript ã‚’æœ‰åŠ¹ã«ã—ãŸ Internet Explorer 5 / Netscape 6 ä»¥é™ãªã©ã® DHTML å¯¾å¿œãƒ–ãƒ©ã‚¦ã‚¶ãŒå¿…è¦ã§ã™ã€‚</P>
 </NOSCRIPT>
 
 <FORM NAME="form1">
@@ -118,7 +114,7 @@ if (!(document.all || document.getElementById)) {
 <INPUT TYPE="radio" NAME="set" VALUE="3" onClick="setChange(3)">3
 <INPUT TYPE="radio" NAME="set" VALUE="4" onClick="setChange(4)">4
 &nbsp;
-<INPUT TYPE="button" VALUE="–ß‚é" onClick="history.back()">
+<INPUT TYPE="button" VALUE="æˆ»ã‚‹" onClick="history.back()">
 </DIV>
 </FORM>
 
